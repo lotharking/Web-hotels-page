@@ -7,52 +7,133 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
+	<link rel="stylesheet" href="css/main.css">
+	
     <!--<title>Hello, world!</title> -->
-  </head>
-  <body>
+	</head>
+	<body>
 	
-  <div class="jumbotron">
- 	<h1 class="display-4">Guía hoteles</h1>
-  </div>
-	<div class="container">
-  	<div class="row">
-    <div class="col-sm">
-	<p>Hotel 1</p>
-      <p>Este es el principal hotel junto al mar</p>
-    </div>
-    <div class="col-sm">
-	<p>Hotel 2</p>
-      <p>Este es el principal hotel junto al desierto</p>
-    </div>
-    <div class="col-sm">
-	<p>Hotel 3</p>
-      <p>Este es el principal hotel junto al bosque</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm">
-	<p>Hotel 4</p>
-      <p>Maravilloso hotel para colombianos</p>
-	  <a class="btn btn-dark" href="#" role="button">¿Quieres conocer mas?</a>
-    </div>
-    <div class="col-sm">
-	<p>Hotel 5</p>
-      <p>Maravilloso hotel para peruanos</p>
-	  <a class="btn btn-dark" href="#" role="button">¿Quieres conocer mas?</a>
-    </div>
-    <div class="col-sm">
-	<p>Hotel 6</p>
-      <p>Este es el principal hotel junto a la nieve</p>
-	  <a class="btn btn-dark" href="#" role="button">¿Quieres conocer mas?</a>
-    </div>
-  </div>
-	</div>
-	
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  </body>
+	 	<div class="jumbotron">
+	 		<h1 class="display-4">Guía hoteles</h1>
+	 	</div>
+		<div class="container">
+	  		<div class="row">
+	    		<div class="col-sm-4">
+					<p>
+						<h3>¿Cómo funciona?</h3>
+				    	<p>Este es el principal hotel junto al mar</p>
+					</p>
+	    		</div>
+		    	<div class="col-sm-4">
+					<p>
+						<h3>¿Dónde puedo reservar?</h3>
+				    	<p>Este es el principal hotel junto al desierto</p>
+					</p>
+		    	</div>
+			    <div class="col-sm-4">
+					<p>
+						<h3>¿Cómo pago?</h3>
+				    	<p>Este es el principal hotel junto al bosque</p>
+					</p>
+			    </div>
+			</div>
+			<div class="d-flex flex-wrap flex-row-reverse">
+				<div class="card-hotel d-flex flex-column justify-content-between">
+					<div>
+						<h5>Hotel Barcelona</h5>
+				     	<p>Maravilloso hotel para colombianos</p>
+					</div>
+					<div>			
+				 		<button class="btn btn-dark btn-reserva"> Reservar</button>
+					</div>
+				</div>
+			    <div class="card-hotel d-flex flex-column justify-content-between">
+					<div>	
+						<h5>Hotel Buenos Aires</h5>
+						<p>Maravilloso hotel para peruanos</p>
+					</div>
+					<div>	
+						<button class="btn btn-dark btn-reserva"> Reservar</button>
+					</div>
+			    </div>
+				<div class="card-hotel d-flex flex-column justify-content-between">
+					<div>	
+						<h5>Hotel Lima</h5>
+						<p>Este es el principal hotel junto a la nieve</p>
+					</div>
+					<div>	
+						<button class="btn btn-dark btn-reserva"> Reservar</button>
+					</div>
+				</div>
+				<div class="card-hotel d-flex flex-column justify-content-between">
+					<div>	
+						<h5>Hotel Rio de Janeiro</h5>
+						<p>Maravilloso hotel para colombianos</p>
+					</div>	
+					<div>	
+						<button class="btn btn-dark btn-reserva"> Reservar</button>
+					</div>	
+				</div>
+		    	<div class="card-hotel d-flex flex-column justify-content-between">
+					<div>	
+						 <h5>Hotel La Paz</h5>
+					     <p>Maravilloso hotel para peruanos</p>
+					</div>
+					<div>
+						 <button class="btn btn-dark btn-reserva"> Reservar</button>
+					</div>
+		    	</div>
+		    	<div class="card-hotel d-flex flex-column justify-content-between">
+					<div>
+					  	<h5>Hotel Madrid</h5>
+				      	<p>Este es el principal hotel junto a la nieve</p>
+					</div>
+					<div>
+					  	<button class="btn btn-dark btn-reserva"> Reservar</button>
+					</div>
+		    	</div>
+			    <div class="card-hotel d-flex flex-column justify-content-between">
+					<div>
+						<h5>Hotel Sao Pablo</h5>
+						<p>Este es el principal hotel junto a la nieve</p>
+					</div>
+					<div>
+						<button class="btn btn-dark btn-reserva"> Reservar</button>
+					</div>
+			    </div>
+			</div>
+		</div>
+		
+		
+		<footer>
+			<div class="row">
+				<div class="col-sm-4 d-flex flex-column">
+					<a href ="http://www.facebook.com">Facebook</a>
+					<a href ="http://www.twitter.com">Twitter</a>
+					<a href ="http://www.instagram.com">Instagram</a>
+					<a href ="http://www.instagram.com">Instagram</a>
+				</div>
+				<div class="col-sm-4">
+					<addres>
+						<h3>Oficina central</h3>
+						<p>Cra 15b2 #34-50</p>
+						<p>+573104564234</p>
+						<p>contacto@guiahoteles.com</p>
+					</addres>
+				</div>
+				<div class="col-sm-4 d-flex flex-column align-item-end">
+					<a href ="http://www.facebook.com">Nosotros</a>
+					<a href ="http://www.twitter.com">Precios</a>
+					<a href ="http://www.instagram.com">Términos y condiciones</a>
+					<a href ="http://www.instagram.com">Contacto</a>
+				</div>
+			</div>
+		</footer>
+		
+	    <!-- Optional JavaScript -->
+	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+	    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+	    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	</body>
 </html>
