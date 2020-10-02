@@ -37,20 +37,33 @@
 					<li class="breadcrumb-item active" aria-current="page">Home</li>
 				</ol>
 			</nav>
+			<div class="row">
+				<div class="col-sm-4">
+				<!--aria-expanded identifica como aparece inicialmente
+				aria-controls indentifica entre diferentes componentes-->
+					<button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">¿Comó funciona?</button>
+				</div>
+				<div class="col-sm-4">
+					<button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="multiCollapse2">¿Dónde pago?</button>
+				</div>
+				<div class="col-sm-4">
+					<button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multiCollapse3">¿Comó pago?</button>
+				</div>
+			</div>
 	  		<div class="row">
-	    		<div class="col-sm-4">
+	    		<div class="col-sm-4 collapse multi-collapse" id="funciona">
 					<p>
 						<h3>¿Cómo funciona?</h3>
 				    	<p>Este es el principal hotel junto al mar</p>
 					</p>
 	    		</div>
-		    	<div class="col-sm-4">
+		    	<div class="col-sm-4 collapse multi-collapse" id="reserva">
 					<p>
 						<h3>¿Dónde puedo reservar?</h3>
 				    	<p>Este es el principal hotel junto al desierto</p>
 					</p>
 		    	</div>
-			    <div class="col-sm-4">
+			    <div class="col-sm-4 collapse multi-collapse" id="pago">
 					<p>
 						<h3>¿Cómo pago?</h3>
 				    	<p>Este es el principal hotel junto al bosque</p>
